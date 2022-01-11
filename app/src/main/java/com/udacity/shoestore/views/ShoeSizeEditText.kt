@@ -8,22 +8,9 @@ import androidx.databinding.InverseBindingMethod
 import androidx.databinding.InverseBindingMethods
 import com.google.android.material.textfield.TextInputEditText
 
-@BindingMethods(
-    BindingMethod(
-        type = ShoeSizeEditText::class,
-        attribute = "app:shoeSize",
-        method = "setShoeSize"
-    )
-)
 
-@InverseBindingMethods(
-    InverseBindingMethod(
-        type = ShoeSizeEditText::class,
-        attribute = "app:shoeSize",
-        method = "getShoeSize",
-        event = "android:textAttrChanged"
-    )
-)
+
+
 class ShoeSizeEditText : TextInputEditText {
     constructor(
         context: Context
